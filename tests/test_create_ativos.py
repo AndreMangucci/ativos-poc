@@ -53,7 +53,7 @@ def test_main():
         avg_fuel_consumption=5,
     )
 
-    # Uniport - Implemento
+    # Uniport - Implemento autopropelido
 
     uniport = models.Ativos.objects.create(
         oid='208',
@@ -109,6 +109,27 @@ def test_main():
         fg_product_transport=False,
         engine_power=75,
         working_width=None,
+        hor_init=0,
+        km_init=0,
+        hor_current=0,
+        km_current=0,
+        avg_fuel_consumption=None,
+    )
+
+    # Arado - Implemento
+
+    arado = models.Ativos.objects.create(
+        oid='1',
+        name='Arado',
+        org=org,
+        modelo_carbon=None,
+        has_engine=False,
+        can_tow=False,
+        can_be_towed=True,
+        fg_operate=True,
+        fg_product_transport=False,
+        engine_power=None,
+        working_width=6,
         hor_init=0,
         km_init=0,
         hor_current=0,
