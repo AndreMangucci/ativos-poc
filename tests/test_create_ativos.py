@@ -76,7 +76,7 @@ def test_main():
 
     # Pá carragadeira - Hibrido
 
-    uniport = models.Ativos.objects.create(
+    cat = models.Ativos.objects.create(
         oid='200',
         name='CAT 996',
         org=org,
@@ -93,4 +93,25 @@ def test_main():
         hor_current=400,
         km_current=0,
         avg_fuel_consumption=3,
+    )
+
+    # Gerador - Ferramenta
+
+    generator = models.Ativos.objects.create(
+        oid='144',
+        name='GERADOR X',
+        org=org,
+        modelo_carbon=None,
+        has_engine=True,
+        can_tow=False,
+        can_be_towed=False,
+        fg_operate=False,
+        fg_product_transport=False,
+        engine_power=75,
+        working_width=None,
+        hor_init=0,
+        km_init=0,
+        hor_current=0,
+        km_current=0,
+        avg_fuel_consumption=None,
     )
