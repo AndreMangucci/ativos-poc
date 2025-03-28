@@ -1,0 +1,22 @@
+# Django specific
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+
+# If using SQLite
+*.sqlite3
+
+
+# If using virtual environments
+venv/
+.env/
+*.env
+
+# If using PyCharm
+.idea/
+
+# If using VSCode
+.vscode/
